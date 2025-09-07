@@ -1,0 +1,115 @@
+import random
+
+#Secret Word Reveal
+
+
+Word = "mystery"
+first_letter = Word[0]
+last_letter = Word[6]
+
+print(first_letter, last_letter)
+
+#2
+
+print(Word[::-1])
+
+#3
+
+word = "mystery"
+vowels = "aeiouAEIOU"
+modified_word = ''.join('*' if char in vowels else char for char in word)
+
+print(modified_word)
+
+
+
+#trangl
+
+name = input("Enter your name plsplsplsplspls: ")
+
+for x in range(1, len(name) + 1):
+   print(name[:x])
+
+
+#dice gam
+
+die1 = random.randint(1, 6)
+die2 = random.randint(1, 6)
+total = die1 + die2
+
+print(f"You rolled: {die1} and {die2}")
+
+if total == 7 or total == 11:
+    print("You win!")
+elif die1 == die2:
+    print("Double trouble!")
+else:
+    print(f"Total: {total}")
+
+#case stuff
+
+msg = "Python Is Fun!"
+
+
+print(msg.upper())
+print(msg.lower())
+print(msg.swapcase())
+
+#middle caractr
+
+word = "banana"
+length = len(word)
+
+if length % 2 == 0:
+    middle = word[length//2 - 1 : length//2 + 1]
+else:
+    middle = word[length//2]
+
+print(middle)
+
+#count letr
+
+sentence = input("put sentence plsplsplspls ")
+
+print(len(sentence))
+
+#hide
+
+full_name = input("Enter your full name: ")
+
+name_parts = full_name.split()
+
+masked_parts = [part[0] + '*' * (len(part) - 1) for part in name_parts]
+
+masked_name = ' '.join(masked_parts)
+print("Masked name:", masked_name)
+
+#filter
+
+sentence = input("Enter a sentence: ")
+
+# Split sentence into words
+words = sentence.split()
+
+# Filter and print words longer than 4 letters
+long_words = [word for word in words if len(word) > 4]
+
+print(' '.join(long_words))
+
+#multiply
+
+numbers = [1, 4, 7, 10]
+
+for x in numbers:
+    print(x * 3)
+
+#reverse
+
+sentence = input("Enter a sentence: ")
+
+reversed_words = sentence.split()[::-1]
+
+reversed_sentence = ' '.join(reversed_words)
+print("Reversed sentence:", reversed_sentence)
+
+print("hello :)))")
